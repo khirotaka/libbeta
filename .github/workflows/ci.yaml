@@ -13,6 +13,7 @@ jobs:
         with:
           toolchain: stable
           override: true
+          target: x86_64-apple-darwin
 
       - name: Setup Python
         uses: actions/setup-python@v1
