@@ -13,7 +13,6 @@ jobs:
         with:
           toolchain: stable
           override: true
-          profile: minimal
 
       - name: Setup Python
         uses: actions/setup-python@v1
