@@ -8,12 +8,11 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    env:
+      ARCHFLAGS: -arch x86_64 -arch arm64
+
     steps:
       - uses: actions/checkout@v2
-
-      - name: Define Arch Flags
-        env:
-          ARCHFLAGS: -arch x86_64 -arch arm64
 
       - name: Install Rust
         uses: actions-rs/toolchain@v1
