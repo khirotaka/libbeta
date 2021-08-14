@@ -1,6 +1,8 @@
 # Libbeta
 RustでPythonのライブラリを作るためのテストベット
 
+[![pytest](https://github.com/khirotaka/libbeta/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/khirotaka/libbeta/actions/workflows/ci.yaml)
+
 ## 目的
 * [x] `setuptools-rust` で 複数のPythonモジュールを作成する方法を確立する。
 * [ ] [nalgebra](https://nalgebra.org) と NumPyを相互理利用する方法を習得する。
