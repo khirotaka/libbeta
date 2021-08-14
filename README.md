@@ -21,3 +21,16 @@ $ cd libbeta/
 $ python -m venv venv && souce venv/bin/activate
 $ python setup.py install
 ```
+
+
+## Build Universal 2 Binary
+### Requirements
+`rustup target add`
+  * `aarch64-apple-darwin`
+  * `x86_64-apple-darwin`
+
+ 
+
+```shell
+$ python setup.py bdist_wheel
+```
