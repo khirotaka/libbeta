@@ -10,6 +10,11 @@ jobs:
     runs-on: macos-latest
     env:
       ARCHFLAGS: -arch x86_64 -arch arm64
+      strategy:
+        matrix:
+          target:
+            - x86_64-apple-darwin
+            - aarch64-apple-darwin
 
     steps:
       - uses: actions/checkout@v2
@@ -19,7 +24,7 @@ jobs:
         with:
           toolchain: stable
           override: true
-          target: x86_64-apple-darwin, aarch64-apple-darwin
+          target: ${{matrix.target}}
 
       - name: Setup Python
         uses: actions/setup-python@v2
