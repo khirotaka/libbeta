@@ -10,7 +10,6 @@ jobs:
     runs-on: macos-11
     env:
       ARCHFLAGS: -arch x86_64 -arch arm64
-      SYSTEM_VERSION_COMPAT: 0
       MACOSX_DEPLOYMENT_TARGET: 11_0
 
     steps:
