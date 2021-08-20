@@ -33,7 +33,8 @@ jobs:
       - name: Build wheels
         run: python setup.py bdist_wheel
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startWith(github.ref, 'refs/tags/')
         with:
-          path: ./dist/*.whl
+          files: ./dist/*.whl
