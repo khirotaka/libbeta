@@ -4,7 +4,7 @@ from setuptools_rust import Binding, RustExtension
 
 setup(
     name="libbeta",
-    version="0.1.0",
+    version="0.1.2",
     packages=find_namespace_packages(include=["libbeta.*"]),
     zip_safe=False,
     rust_extensions=[
